@@ -50,6 +50,22 @@ make sure they work in `part2-test.py`. Make sure to include test cases for all 
 
 ### Part 3: Dictionaries
 
-The stubs for these functions can be found in `part3.py`.
+The stubs for these functions can be found in `part3.py`. For this section, we wrote the test cases for you. You can test your functions by running `part3-test.py`.
 
+1. In cryptography, the easiest form of cipher is known as a Caesar cipher. In a Caesar cipher, we encode letters by shifting the characters in the alphabet by some value. For this first exercise, write a function that returns a dictionary mapping lowercase letters to lowercase letters based upon some shift s. For example, if we shift the alphabet by 3, `a`s get mapped to `d`s, `b`s to `e`s, ... `z`s to `c`s. You can use the two dictionaries given in the script.
 
+2. Use the function you wrote in the previous step to encodes a plaintext string given some shift s. You can assume that the entire string is in lowercase and ignore punctuation. Make sure to return the ciphertext.
+
+3. Use the function you wrote in step 1 to write a decode function that takes in the ciphertext and some shift s to produce the plaintext. Make sure to return the plaintext.
+
+4. Uh oh! You lost the shift s for your cipher. Write a function that returns all possible plaintexts for your ciphertext in a list. Try swapping ciphertexts with a friend and look through all the possible plaintexts to guess their meaning.
+
+5. Ask for a checkoff from an instructor or TA.
+
+### BONUS:
+
+Read about Vignere ciphers here: http://www.crypto-it.net/eng/simple/vigenere-cipher.html?tab=1.
+
+Implement Vignere cipher encode and decode functions. Remember that your encode function must take in both a plaintext string and a keyword. Make sure your keyword is short (less than 10 characters). Your decode function should also take in a ciphertext string and a keyword. Also, be sure to write test cases for your functions!
+
+Alternatively, research and implement a different cipher of your choice.

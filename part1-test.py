@@ -1,3 +1,4 @@
+# Part 1 test of the Python Review lab.
 import part1
 
 ## Test 1. Tests the hello_world function
